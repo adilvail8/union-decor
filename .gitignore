@@ -12,3 +12,4 @@ Desktop.ini
 # Python (скрипты подготовки картинок)
 __pycache__/
 *.pyc
+assets/img/gen_raw/
