@@ -83,6 +83,10 @@ header.solid .nav{padding:13px 0}
 .wm sup{font-family:var(--mono);font-size:.36em;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);vertical-align:super;font-weight:400}
 .hero-on .wm,.hero-on .menu a,.hero-on .h-phone{color:var(--cream)}
 .hero-on .wm sup{color:rgba(239,234,224,.7)}
+.wm img{height:34px;width:auto;display:block;filter:invert(1);transition:filter .4s var(--ease)}
+header.solid .wm img{height:30px}
+.hero-on .wm img{filter:none}
+.foot-brand .wm img{height:46px;filter:none;margin-bottom:18px}
 .menu{display:flex;gap:30px;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
 .menu a{position:relative;padding:3px 0;color:var(--ink-2);transition:color .3s}
 .menu a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--wood);transition:width .4s var(--ease)}
@@ -317,7 +321,7 @@ footer{background:var(--ink);color:var(--cream);padding:clamp(60px,8vw,110px) 0 
 
 <header id="header">
   <div class="wrap nav">
-    <a class="wm" href="#top">Union<i>Decor</i><sup>Астана</sup></a>
+    <a class="wm" href="#top" aria-label="Union Decor · Астана"><img src="assets/img/logo.png" alt="Union Decor" /></a>
     <nav class="menu">
       <a href="#catalog">Покрытия</a>
       <a href="#waterproof">Кварцвинил</a>
@@ -612,7 +616,7 @@ footer{background:var(--ink);color:var(--cream);padding:clamp(60px,8vw,110px) 0 
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <div class="wm">Union<i>Decor</i><sup>Астана</sup></div>
+        <div class="wm"><img src="assets/img/logo.png" alt="Union Decor" /></div>
         <p>Центр SPC-кварцвинила, ламината и паркета в Астане. 20 брендов, более 1000 декоров, бесплатная доставка по городу.</p>
       </div>
       <div class="foot-col">
