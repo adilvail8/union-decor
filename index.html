@@ -175,6 +175,11 @@ header.solid .wm img{height:30px}
 .prod-media{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:12px}
 .prod-media .ph{aspect-ratio:4/5}
 .prod-media .ph.big{grid-column:1 / -1;aspect-ratio:16/10}
+@media(min-width:1041px){
+  .prod-grid{align-items:stretch}
+  .prod-media{height:100%}
+  .prod-media .ph.big{aspect-ratio:auto;height:100%;min-height:520px}
+}
 
 /* waterproof highlight */
 .wp{background:var(--ink);color:var(--cream)}
